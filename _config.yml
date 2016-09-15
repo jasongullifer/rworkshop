@@ -1,0 +1,9 @@
+name: "R Workshop Website"
+description: ""
+
+url: "127.0.0.1:4000"
+
+paginate: 10
+
+markdown: rdiscount
+permalink: none
