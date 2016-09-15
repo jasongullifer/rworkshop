@@ -1,19 +1,161 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rworkshop by jasongullifer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Rworkshop</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/jasongullifer/rworkshop" class="btn">View on GitHub</a>
+      <a href="https://github.com/jasongullifer/rworkshop/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/jasongullifer/rworkshop/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+    <section class="main-content">
+      <h1>
+<a id="installing-r" class="anchor" href="#installing-r" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing R</h1>
 
-<head>
-<title>*markdown-output*</title>
+<p>R is a cross-platform statistical computing package that runs in the command line. There are various interfaces that run and display R in a more user-friendly format. These are installed separately from R. One of the most popular and polished interfaces is called R studio, and it also happens to be cross-platform. </p>
 
-</head>
+<p>In this workshop, we will be using the latest version of R-project together with the RStudio interface. Feel free to try out different options and use what works best for you. Everything you learn in this workshop will be independent of the user interface you choose. </p>
 
-<body>
+<p>Below you can find the installation instructions for:</p>
 
-<h1>My Index Page</h1>
+<ul>
+<li><a href="#Windows">Windows</a></li>
+<li><a href="#Mac">Mac</a></li>
+<li><a href="#Linux">Linux</a></li>
+</ul>
 
-<p><a href="install.html">Link to install instructions</a></p>
+<p>After you install R and R Studio, you should install the packages we'll be using in the workshop. The packages are platform independent. Don't worry, we'll go over what packages are and how to find them during the workshop.</p>
 
-</body>
+<p>-<a href="#Packages">Required packages</a></p>
+
+<h2>
+<a id="windows" class="anchor" href="#windows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="Windows">Windows</a>
+</h2>
+
+<h3>
+<a id="installing-r-for-windows" class="anchor" href="#installing-r-for-windows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing R for Windows</h3>
+
+<ol>
+<li>Navigate to <a href="https://cran.r-project.org/">https://cran.r-project.org/</a>.</li>
+<li>If you are asked to choose a mirror, pick any one close to your location.</li>
+<li>Click "Download R for Windows".</li>
+<li>Click "base".</li>
+<li>Click "Download R [version number] for Windows".</li>
+<li>Proceed through the installation (choose 64-bit if you have a computer with a 64-bit processor; most newer computers do). </li>
+<li>After installation, you will notice that R has appeared in your programs folder. This is a default interface for R in Windows. A better interface is R Studio.</li>
+</ol>
+
+<h3>
+<a id="installing-the-rstudio-interface-for-windows" class="anchor" href="#installing-the-rstudio-interface-for-windows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing the RStudio Interface for Windows</h3>
+
+<ol>
+<li>Navigate to <a href="https://www.rstudio.com/">https://www.rstudio.com/</a>
+</li>
+<li>Click "RStudio" or or navigate to "Products --&gt; RStudio"</li>
+<li>Click "Desktop" to download the Desktop version. </li>
+<li>Choose the Windows Installer (selecting 32-bit/64-bit where appropriate)</li>
+<li>Proceed through the installation. </li>
+<li>RStudio should be able to find your default R installation.</li>
+</ol>
+
+<h2>
+<a id="mac" class="anchor" href="#mac" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="Mac">Mac</a>
+</h2>
+
+<h3>
+<a id="installing-r-for-mac" class="anchor" href="#installing-r-for-mac" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing R for Mac</h3>
+
+<ol>
+<li>Navigate to <a href="https://cran.r-project.org/">https://cran.r-project.org/</a>.</li>
+<li>If you are asked to choose a mirror, pick any one close to your location.</li>
+<li>Click "Download R for (Mac) OS X".</li>
+<li>Choose the appropriate package file for your version of Mac OS X.</li>
+<li>Proceed through the installation.</li>
+<li>After installation, you will notice that R has appeared in your programs folder. This is a default interface for R in OS X. A better interface is RStudio.</li>
+</ol>
+
+<h3>
+<a id="installing-the-rstudio-interface-for-mac" class="anchor" href="#installing-the-rstudio-interface-for-mac" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing the RStudio interface for Mac</h3>
+
+<ol>
+<li>Navigate to <a href="https://www.rstudio.com/">https://www.rstudio.com/</a>
+</li>
+<li>Click "RStudio" or or navigate to "Products --&gt; RStudio"</li>
+<li>Click "Desktop" to download the Desktop version. </li>
+<li>Choose the Mac OS X Installer, download, and run it</li>
+<li>Follow the install instructions</li>
+</ol>
+
+<h2>
+<a id="linux" class="anchor" href="#linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="Linux">Linux</a>
+</h2>
+
+<h3>
+<a id="installing-r-for-linux" class="anchor" href="#installing-r-for-linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing R for Linux</h3>
+
+<p>For Debian-based versions of Linux (and perhaps others), R is typically included in your package manager. You should be able to install R with the following command (you probably need root privileges; e.g., <code>sudo</code>):</p>
+
+<ul>
+<li><code>apt-get install r-base r-base-dev</code></li>
+</ul>
+
+<p>In case R is not included with your distribution, You may navigate to <a href="https://cran.r-project.org/">https://cran.r-project.org/</a>, choose "Download R for Linux", and choose the appropriate Linux distribution.</p>
+
+<p>After R is installed, you can open R by opening a terminal and running <code>R</code>. A nice interface to use is RStudio.</p>
+
+<h3>
+<a id="installing-the-rstudio-interface-for-linux" class="anchor" href="#installing-the-rstudio-interface-for-linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing the RStudio interface for Linux</h3>
+
+<ol>
+<li>Navigate to <a href="https://www.rstudio.com/">https://www.rstudio.com/</a>
+</li>
+<li>Click "RStudio" or or navigate to "Products --&gt; RStudio"</li>
+<li>Click "Desktop" to download the Desktop version. </li>
+<li>Choose the Linux Installer appropriate for your version of Linux</li>
+<li>Open the program with your package manager, and install</li>
+</ol>
+
+<h2>
+<a id="packages" class="anchor" href="#packages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="Packages">Packages</a>
+</h2>
+
+<p>It would be a good idea to install the following packages before the workshop begins. </p>
+
+<ul>
+<li>dplyr</li>
+<li>plyr</li>
+<li>tidyr</li>
+<li>reshape2</li>
+<li>ggplot2</li>
+<li>lattice</li>
+<li>ez</li>
+<li>lme4</li>
+</ul>
+
+<p>Open Rstudio and run the following command.</p>
+
+<ul>
+<li><code>install.packages(c("dplyr","plyr","tidyr","ggplot2","reshape2","lattive","ez","lme4"))</code></li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/jasongullifer/rworkshop">Rworkshop</a> is maintained by <a href="https://github.com/jasongullifer">jasongullifer</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
 </html>
