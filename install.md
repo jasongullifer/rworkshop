@@ -1,4 +1,10 @@
-# Installing R
+---
+title: installing
+layout: default
+---
+
+Installing R
+============
 
 R is a cross-platform statistical computing package that runs in the command line. There are various interfaces that run and display R in a more user-friendly format. These are installed separately from R. One of the most popular and polished interfaces is called R studio, and it also happens to be cross-platform. 
 
@@ -12,11 +18,13 @@ Below you can find the installation instructions for:
 
 After you install R and R Studio, you should install the packages we'll be using in the workshop. The packages are platform independent. Don't worry, we'll go over what packages are and how to find them during the workshop.
 
--[Required packages](#Packages)
+- [Required packages](#Packages)
 
 
-##<a name="Windows">Windows</a>
-###Installing R for Windows
+<a name="Windows">Windows</a>
+-----------------------------
+
+### Installing R for Windows
 
 1. Navigate to [https://cran.r-project.org/](https://cran.r-project.org/).
 1. If you are asked to choose a mirror, pick any one close to your location.
@@ -26,7 +34,7 @@ After you install R and R Studio, you should install the packages we'll be using
 1. Proceed through the installation (choose 64-bit if you have a computer with a 64-bit processor; most newer computers do). 
 1. After installation, you will notice that R has appeared in your programs folder. This is a default interface for R in Windows. A better interface is R Studio.
 
-###Installing the RStudio Interface for Windows
+### Installing the RStudio Interface for Windows
 
 1. Navigate to [https://www.rstudio.com/](https://www.rstudio.com/)
 1. Click "RStudio" or or navigate to "Products --> RStudio"
@@ -37,8 +45,9 @@ After you install R and R Studio, you should install the packages we'll be using
 
 
 
-##<a name="Mac">Mac</a>
-###Installing R for Mac
+<a name="Mac">Mac</a>
+---------------------
+### Installing R for Mac
 1. Navigate to [https://cran.r-project.org/](https://cran.r-project.org/).
 1. If you are asked to choose a mirror, pick any one close to your location.
 1. Click "Download R for (Mac) OS X".
@@ -46,7 +55,7 @@ After you install R and R Studio, you should install the packages we'll be using
 1. Proceed through the installation.
 1. After installation, you will notice that R has appeared in your programs folder. This is a default interface for R in OS X. A better interface is RStudio.
 
-###Installing the RStudio interface for Mac
+### Installing the RStudio interface for Mac
 1. Navigate to [https://www.rstudio.com/](https://www.rstudio.com/)
 1. Click "RStudio" or or navigate to "Products --> RStudio"
 1. Click "Desktop" to download the Desktop version. 
@@ -54,8 +63,9 @@ After you install R and R Studio, you should install the packages we'll be using
 1. Follow the install instructions
 
 
-##<a name="Linux">Linux</a>
-###Installing R for Linux
+<a name="Linux">Linux</a>
+-------------------------
+### Installing R for Linux
 For Debian-based versions of Linux (and perhaps others), R is typically included in your package manager. You should be able to install R with the following command (you probably need root privileges; e.g., `sudo`):
 
 - `apt-get install r-base r-base-dev`
@@ -64,7 +74,7 @@ In case R is not included with your distribution, You may navigate to [https://c
 
 After R is installed, you can open R by opening a terminal and running `R`. A nice interface to use is RStudio.
 
-###Installing the RStudio interface for Linux
+### Installing the RStudio interface for Linux
 1. Navigate to [https://www.rstudio.com/](https://www.rstudio.com/)
 1. Click "RStudio" or or navigate to "Products --> RStudio"
 1. Click "Desktop" to download the Desktop version. 
@@ -72,8 +82,8 @@ After R is installed, you can open R by opening a terminal and running `R`. A ni
 1. Open the program with your package manager, and install
 
 
-##<a name="Packages">Packages</a>
-
+<a name="Packages">Packages</a>
+--------------------------------
 It would be a good idea to install the following packages before the workshop begins. 
 
 - dplyr
