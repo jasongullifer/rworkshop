@@ -47,7 +47,9 @@ After you install R and R Studio, you should install the packages we'll be using
 
 <a name="Mac">Mac</a>
 ---------------------
+
 ### Installing R for Mac
+
 1. Navigate to [https://cran.r-project.org/](https://cran.r-project.org/).
 1. If you are asked to choose a mirror, pick any one close to your location.
 1. Click "Download R for (Mac) OS X".
@@ -56,6 +58,7 @@ After you install R and R Studio, you should install the packages we'll be using
 1. After installation, you will notice that R has appeared in your programs folder. This is a default interface for R in OS X. A better interface is RStudio.
 
 ### Installing the RStudio interface for Mac
+
 1. Navigate to [https://www.rstudio.com/](https://www.rstudio.com/)
 1. Click "RStudio" or or navigate to "Products --> RStudio"
 1. Click "Desktop" to download the Desktop version. 
@@ -65,7 +68,9 @@ After you install R and R Studio, you should install the packages we'll be using
 
 <a name="Linux">Linux</a>
 -------------------------
+
 ### Installing R for Linux
+
 For Debian-based versions of Linux (and perhaps others), R is typically included in your package manager. You should be able to install R with the following command (you probably need root privileges; e.g., `sudo`):
 
 - `apt-get install r-base r-base-dev`
@@ -75,6 +80,7 @@ In case R is not included with your distribution, You may navigate to [https://c
 After R is installed, you can open R by opening a terminal and running `R`. A nice interface to use is RStudio.
 
 ### Installing the RStudio interface for Linux
+
 1. Navigate to [https://www.rstudio.com/](https://www.rstudio.com/)
 1. Click "RStudio" or or navigate to "Products --> RStudio"
 1. Click "Desktop" to download the Desktop version. 
