@@ -1,6 +1,7 @@
 ---
 title: installing
 layout: default
+navigation_weight: 2
 ---
 
 Installing R
