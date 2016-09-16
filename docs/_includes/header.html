@@ -11,13 +11,12 @@
     {% for p in navigation_pages %}
       {% if p.navigation_weight %}
         <li>
-          <a class="btn" href="./{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+          <a class="btn" href=".{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
             {{ p.title }}
           </a>
         </li>
       {% endif %}
-	{% endfor %}
-    <li><a class="btn" href="index.html">stuff</a>	</li>
+	{% endfor %}    
     <li><a href="https://github.com/jasongullifer/rworkshop" class="btn">View on GitHub</a></li>
     <li><a href="https://github.com/jasongullifer/rworkshop/zipball/master" class="btn">Download .zip</a></li>
     <li><a href="https://github.com/jasongullifer/rworkshop/tarball/master" class="btn">Download .tar.gz</a></li>
