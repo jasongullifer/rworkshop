@@ -1,0 +1,51 @@
+Movie,Year,Company,Length_Minutes,Length_Categorical,Tobacco_Seconds,Alcohol_Seconds
+Snow White and the Seven Dwarves,1937,Disney,83,Long,0,0
+Pinocchio,1940,Disney,88,Long,223,80
+Fantasia,1940,Disney,120,Long,0,0
+Dumbo,1941,Disney,64,Short,176,88
+Bambi,1942,Disney,69,Short,0,0
+The Three Caballeros,1944,Disney,seventy-one,Short,548,8
+Fun and Fancy Free,1947,Disney,76,Short,0,4
+Cinderella,1950,Disney,74,Short,37,0
+Alice in Wonderland,1951,Disney,75,Short,158,0
+Peter Pan,1953,Disney,76,Short,51,33
+Lady and the Tramp,1955,Disney,75,Short,0,0
+Sleeping Beauty,1959,Disney,75,Short,0,113
+101 Dalmations,1961,Disney,79,Short,299,51
+The Sword in the Stone,1963,Disney,80,Long,37,20
+Jungle Book,1967,Disney,78,Short,0,0
+The Aristocats,1970,Disney,78,Short,11,142
+Robin Hood,1973,Disney,83,Long,0,39
+The Rescuers,1977,Disney,77,Short,0,0
+Winnie the Pooh,1977,Disney,71,Short,0,0
+The Fox and the Hound,1981,Disney,83,Long,0,0
+The Black Cauldron,1985,Disney,80,Long,0,34
+The Great Mouse Detective,1986,Disney,73,Short,165,414
+Oliver and Company,1988,Disney,72,Short,74,0
+The Little Mermaid,1989,Disney,82,Long,9,0
+The Rescuers Down Under,1990,Disney,74,Short,0,76
+Beauty and the Beast,1991,Disney,84,Long,0,123
+Aladdin,1992,Disney,90,Long,2,3
+The Lion King,1994,Disney,89,Long,0,0
+Pocahontas,1995,Disney,81,Long,6,7
+Toy Story,1995,Disney,81,Long,0,0
+The Hunchback of Notre Dame,1996,Disney,90,Long,23,46
+James and the Giant Peach,1996,Disney,79,Short,206,38
+Hercules,1997,Disney,92,Long,9,13
+The Secret of NIMH,1982,MGM,82,Long,0,0
+All Dogs Go to Heaven,1989,MGM,89,Long,205,73
+All Dogs Go to Heaven 2,1996,MGM,82,Long,162,72
+Babes in Toyland,1997,MGM,74,Short,0,0
+Thumbelina,1994,Warner Bros.,86,Long,6,5
+A Troll in Central Park,1994,Warner Bros.,76,Short,1,0
+Space Jam,1996,Warner Bros.,81,Long,117,0
+Pippi Longstocking,1997,Warner Bros.,75,Short,5,0
+Cats Don't Dance,1997,Warner Bros.,75,Short,91,0
+An American Tail,1986,Universal,77,Short,155,74
+The Land Before Time,1988,Universal,70,Short,0,0
+An American Tail: Fievel Goes West,1991,Universal,75,Short,24,28
+We're Back!: A Dinosaur's Story,1993,Universal,64,Short,55,0
+Land Before Time 2,1994,Universal,73,Short,0,0
+Balto,1995,Universal,74,Short,0,0
+Once Upon a Forest,1993,20th Century Fox,71,Short,0,0
+Anastasia,1997,21st Century Fox,94,Long,17,39
