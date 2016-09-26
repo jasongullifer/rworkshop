@@ -101,9 +101,9 @@ It would be a good idea to install the following packages before the workshop be
 - lattice
 - ez
 - lme4
-
+- nycflights13
 
 
 Open Rstudio and run the following command.
 
-- `install.packages(c("dplyr","plyr","tidyr","ggplot2","reshape2","lattive","ez","lme4"))`
+- `install.packages(c("dplyr","plyr","tidyr","ggplot2","reshape2","lattive","ez","lme4","nycflights13"))`

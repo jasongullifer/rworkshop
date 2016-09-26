@@ -7,7 +7,7 @@ navigation_weight: 1
 Preliminaries
 =============
 - [Installing R](install.html)
-
+- [Required Packages](install.html#Packages)
 Layout of this workshop
 =======================
 
