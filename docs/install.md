@@ -38,7 +38,7 @@ After you install R and R Studio, you should install the packages we'll be using
 ### Installing the RStudio Interface for Windows
 
 1. Navigate to [https://www.rstudio.com/](https://www.rstudio.com/)
-1. Click "RStudio" or or navigate to "Products --> RStudio"
+1. Click "RStudio" or navigate to "Products --> RStudio"
 1. Click "Desktop" to download the Desktop version. 
 1. Choose the Windows Installer (selecting 32-bit/64-bit where appropriate)
 1. Proceed through the installation. 
@@ -61,7 +61,7 @@ After you install R and R Studio, you should install the packages we'll be using
 ### Installing the RStudio interface for Mac
 
 1. Navigate to [https://www.rstudio.com/](https://www.rstudio.com/)
-1. Click "RStudio" or or navigate to "Products --> RStudio"
+1. Click "RStudio" or navigate to "Products --> RStudio"
 1. Click "Desktop" to download the Desktop version. 
 1. Choose the Mac OS X Installer, download, and run it
 1. Follow the install instructions
@@ -83,7 +83,7 @@ After R is installed, you can open R by opening a terminal and running `R`. A ni
 ### Installing the RStudio interface for Linux
 
 1. Navigate to [https://www.rstudio.com/](https://www.rstudio.com/)
-1. Click "RStudio" or or navigate to "Products --> RStudio"
+1. Click "RStudio" or navigate to "Products --> RStudio"
 1. Click "Desktop" to download the Desktop version. 
 1. Choose the Linux Installer appropriate for your version of Linux
 1. Open the program with your package manager, and install
