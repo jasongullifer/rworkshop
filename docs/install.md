@@ -106,4 +106,4 @@ It would be a good idea to install the following packages before the workshop be
 
 Open Rstudio and run the following command.
 
-- `install.packages(c("dplyr","plyr","tidyr","ggplot2","reshape2","lattive","ez","lme4","nycflights13"))`
+- `install.packages(c("dplyr","plyr","tidyr","ggplot2","reshape2","lattice","ez","lme4","nycflights13"))`
