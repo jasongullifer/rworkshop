@@ -24,15 +24,18 @@ Other Useful Resources
 ======================
 
 Josef Fruehwald's R Workshop
-============================
+----------------------------
+
 [link](https://jofrhwld.github.io/rstudy/index.html)
 
 Guilherme Garcia's R Workshop
-=============================
+-----------------------------
+
 [link](https://guilhermegarcia.github.io/rWorkshop/garcia_rWorkshop_complete.html)
 
 Bodo Winter's Statistics Tutorials
-==================================
+----------------------------------
+
 [link](http://www.bodowinter.com/tutorials.html)
 
 Covers linear mixed effects modeling in an easy-to-understand way.
