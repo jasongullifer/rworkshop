@@ -11,12 +11,12 @@ Preliminaries
 Layout of this workshop
 =======================
 
-- Introduction [HTML](introduction.html) / [PPT Slides](ppts/01_introduction.pptx)
-- Interacting with R [HTML](interact.html) / [PPT Slides](ppts/02_interact.pptx)
-- Data basics [HTML](databasics.html) / [PPT Slides](ppts/03_databasics.pptx)
-- Organization and aggregation [HTML](organization.html) / [PPT Slides](ppts/04_organization.pptx)
-- Plotting [HTML](plotting.html) / [PPT Slides](ppts/05_plotting.pptx)
-- Statistics [HTML](statistics.html) / [PPT Slides](ppts/06_statistics.pptx)
+- Introduction [PPT Slides](ppts/01_introduction.pptx)
+- Interacting with R [PPT Slides](ppts/02_interact.pptx)
+- Data basics [PPT Slides](ppts/03_databasics.pptx)
+- Organization and aggregation [PPT Slides](ppts/04_organization.pptx)
+- Plotting [PPT Slides](ppts/05_plotting.pptx)
+- Statistics [PPT Slides](ppts/06_statistics.pptx)
 
 Other Useful Resources
 ======================
