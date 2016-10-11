@@ -30,9 +30,11 @@ Psychology](http://psych.la.psu.edu/) and [Center for Language
 Science](http://cls.psu.edu/) how to use R for their research. Many of
 the students had no prior programming knowledge, and we felt it was
 important to set the course at this level so that beginners can begin
-to realize the awesome power of programming. Many of the materials for
-this workshop (including some of the fake datasets and exercises) have
-been repurposed for this class.
+to realize the awesome power of programming. I'm hoping that the same goals
+can be achieved in this shorter workshop!
+
+Many of the materials for this workshop (including some of the fake
+datasets and exercises) have been repurposed for this class.
 
 
 Other Useful Resources
