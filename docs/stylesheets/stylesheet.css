@@ -133,10 +133,15 @@ a {
 
 .project-tagline a:link{
     color: white;
+    text-decoration: underline;
+    font-weight: bold;
+
 }
 
 .project-tagline a:visited{
     color: white;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 
