@@ -5,7 +5,7 @@
 ##############################################################################
 
 ##############################################################################
-##	Problem #1-3 Background:
+##	Background:
 ##	Your collaborator gives your data ("hot or not.csv") collected with Matlab.
 ##	The data come to you without meaningful column labels (Thanks, Matlab!). 
 ##	Everything is coded numerically. You and your collaborator are 
@@ -20,8 +20,11 @@
 ##
 ##############################################################################
 
-##	Problem #1 Load the  as a data frame. How would we check that the data loaded
-##	okay? What are the dimensions of the dataset?
+## Problem #0
+## Load the dplyr package
+
+## Problem #1 Load the  as a data frame. How would we check that the data loaded
+## okay? What are the dimensions of the dataset?
 
 ## Problem #2 
 ## Rename the columns to have appropriate names. You may use base R or dplyr. 
@@ -51,3 +54,29 @@
 ## Problem #7
 ## Output your summary dataframe with all the information (mean, sd, serr, n,
 ## 95%s) to a csv file.
+
+## Problem 8
+## What can you learn from looking at the descriptive statistics?
+
+## Congrats! You now have a script that will load, recode, and compute 
+## descriptive statistics for your dataset. This will be useful for plotting and
+## analysis.
+## 
+## However, you have decided to run a replication study. This data is located in
+## hot_or_not_rep.csv. The general format of the csv is the same as before. What
+## you would like to do is add this data to the original dataset, and add a
+## column to the new data.frame to code "Experiment (A or B)".
+
+## Problem 9
+## Where would be the optimal place to add this import operation to your script
+## to save yourself typing?
+
+## Problem 10 Place the appropriate commands to import the new data and bind it
+## to the original data. Then compute the descriptive statistics as you did
+## before. Is there something weird going on?
+
+## Problem 11
+## Does it seem like there is an advantage to having a R script vs doing the
+## same exercise in excel?
+
+## Want more? Try out practical1_masochist.R
