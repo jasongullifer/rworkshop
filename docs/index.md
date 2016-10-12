@@ -7,6 +7,8 @@ navigation_weight: 1
 Preliminaries
 =============
 
+- Please check back on Thursday or Friday for the workshop materials. Powerpoints are unavailable until then!
+
 - [Installing R](install.html)
 - [Required Packages](install.html#Packages)
 
