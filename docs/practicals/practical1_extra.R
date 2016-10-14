@@ -24,11 +24,11 @@
 ##      These effects are computed as follows:
 ##
 ##	Alerting Effect = (RT to Double cue trials) - (RT to No cue trials)
-##		Done separately for Neutral, Congruent, and Incongruent Flankers.
+
 ##	Orienting Effect = (RT to Spatial cue trials) - (RT to Center cue trials)
-##		Done separately for Neutral, Congruent, and Incongruent Flankers.
+
 ##	Conflict Effect = (RT to Congruent trials) - (RT to Incongruent trials)
-##		Done separately for None, Central, Double, and Spatial cues.
+
 ##
 ## Messy dataset: In this version of the data, subnum #7 is missing data from
 ## the last half of the experiment, subnum #14 made all errors in the
@@ -36,31 +36,30 @@
 ## 
 ################################################################################
 
-
-##############################################################################
+################################################################################
 ## Problem #0
 ## Load the dplyr package and the ez package
 
 ##	Problem #1
-##	Using the ANT2 task data, load the data in R. 
+##	Using the ANT2 task data from the ez package, load the data in R. 
 
 data(ANT2) #this is a freebie... to load a dataset in a package, 
-           #simply use the data() function and it will place it in your workspace!
+#simply use the data() function and it will place it in your workspace!
 
-## What is the dataset called? 
+## What is the dataset called in your environment? 
 
+##	Problem #2 
+##We know that subnum 7 is missing a large amount of data. Remove subnum 7 from
+##the dataset. Subnum 12 reversed the buttons in his/her responses, so all of
+##the 1s in the "error" column should be 0s, and vice versa. Fix this reversal, or create
+##a new corrected error column.
 
-##	Problem #2
-##	We know that subnum 12 reversed the buttons in his/her responses, so
-##	all of the 1s in the "error" column should be 0s, and vice versa.
-##	Fix this, or create a new corrected error column.
-
-##	Problem #3
-##	The terrible software that ran this version of the ANT task created an
-##	"error" column rather than an "accuracy" column. Create a new column
-##	called "accuracy" using the inverse of the error column. (Note: there
-##	are NAs in these data that you need to preserve.)
-
+##	Problem #3 
+## The terrible software that ran this version of the ANT task created an
+## "error" column rather than an "accuracy" column. Error codes 1 if the
+## participant made an error and 0 if they were accurate. Create a new column
+## called "accuracy" using the inverse of the error column. (Note: there are NAs
+## in these data that you need to preserve.)
 
 ##	Problem #4
 ## For this task, a reviewer is concerned about the presence of outlier trials 
@@ -68,19 +67,14 @@ data(ANT2) #this is a freebie... to load a dataset in a package,
 ## identify/code trials with a reaction time 2.5 SD above or below that 
 ## participant's mean reaction time; (2) exclude those trials from analysis. 
 ## These trials should be identified from correct responses only, not incorrect
-## responses. Hint: dplyr
+## responses.
 
 ## Problem #5
-## How many outliers were there?
+## How many outliers were there as a percentage of the dataset? What should you tell the reviewer?
 
-##	Problem #6 Create a summary dataframe that contains the following information
-##	for each participant for correct trials (excluding incorrect and outliers).
-
-## Alerting effect, orienting effect, conflict effect (using reaction time):
-## Reminder:
-##	Alerting Effect = (RT to Double cue trials) - (RT to No cue trials)
-##		Done separately for Neutral, Congruent, and Incongruent Flankers.
-##	Orienting Effect = (RT to Spatial cue trials) - (RT to Center cue trials)
-##		Done separately for Neutral, Congruent, and Incongruent Flankers.
-##	Conflict Effect = (RT to Congruent trials) - (RT to Incongruent trials)
-##		Done separately for None, Central, Double, and Spatial cues.
+## Problem #6
+## Using only correct trials, create summary dataframes that contain the
+## relevant information to compute each of the following effects for each subject: alerting 
+## effect, orienting effect, conflict effect (using reaction time; see below for
+## a reminder of the trials involved). It's fine to have separate dplyr calls
+## for each effect! You don't actually have to compute the effect.
