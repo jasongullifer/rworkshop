@@ -79,4 +79,4 @@
 ## Does it seem like there is an advantage to having a R script vs doing the
 ## same exercise in excel?
 
-## Want more? Try out practical1_masochist.R
+## Want more? Try out practical1_extra.R

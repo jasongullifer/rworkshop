@@ -1,6 +1,6 @@
 ##################################################################################
 ##
-## Practical 1: For those who finished the first practical, who are more advanced
+## Practical 1 Extra: For those who finished the first practical, who are more advanced
 ## R users, or who are masochists
 ##
 ##################################################################################
