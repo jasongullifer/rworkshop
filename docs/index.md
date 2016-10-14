@@ -12,6 +12,11 @@ Preliminaries
 - [Installing R](install.html)
 - [Required Packages](install.html#Packages)
 
+- [Download the workshop files](https://github.com/jasongullifer/rworkshop/zipball/master)
+
+For the workshop files, if you navigate into the ZIP and into the docs directory, you will find "practicals" and "datasets."
+
+
 Layout of this workshop
 =======================
 
