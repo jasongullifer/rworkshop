@@ -1,0 +1,157 @@
+##################################################################################
+##
+## Practical 1 Extra: For those who finished the first practical, who are more advanced
+## R users, or who are masochists
+##
+##################################################################################
+## 
+## Messy ANT Data: Taken from "ez" package.
+## 
+## You can get more information about the data set here: 
+## http://www.inside-r.org/packages/cran/ez/docs/ANT2
+## 
+## Attentional Networking Task: The Attentional Networking Task (ANT) is a sort 
+## of cued Flanker task. There are four types of cue condition: (1) No cue, (2) 
+## Central cue, (3) Double Cue, and (4) Spatial cue.  There are three types of 
+## flankers: (1) Neutral, (2) Congruent, and (3) Incongruent. Flanker arrows may
+## appear either up or down (above or below fixation), and the central/target 
+## arrow may point either left or right. Ultimately, you want to extract summary
+## data per participant per cue and flanker condition. Additionally, you need to
+## compute 3 effects: the Alerting effect, the Orienting effect, and the
+## Conflict effect. All of this should be done for each of the two groups
+## "Control" and "Treatment"
+##
+##      These effects are computed as follows:
+##
+##	Alerting Effect = (RT to Double cue trials) - (RT to No cue trials)
+
+##	Orienting Effect = (RT to Spatial cue trials) - (RT to Center cue trials)
+
+##	Conflict Effect = (RT to Congruent trials) - (RT to Incongruent trials)
+
+##
+## Messy dataset: In this version of the data, subnum #7 is missing data from
+## the last half of the experiment, subnum #14 made all errors in the
+## incongruent cells, and subnum #12 mistakenly reversed their responses.
+## 
+################################################################################
+
+
+##############################################################################
+## Problem #0
+## Load the dplyr package and the ez package
+library(ez)
+library(dplyr)
+
+##	Problem #1
+##	Using the ANT2 task data from the ez package, load the data in R. 
+
+data(ANT2) #this is a freebie... to load a dataset in a package, 
+           #simply use the data() function and it will place it in your workspace!
+
+## What is the dataset called in your environment? 
+
+#ANT2
+
+##	Problem #2 
+## We know that subnum 7 is missing a large amount of data. Remove subnum 7 from
+## the dataset. Subnum 12 reversed the buttons in his/her responses, so all of 
+## the 1s in the "error" column should be 0s, and vice versa. Fix this reversal,
+## or create a new corrected error column.
+
+ANT2<-ANT2[ANT2$subnum != 7,]
+
+ANT2$error[ANT2$subnum == 12] <- (ANT2$error[ANT2$subnum == 12] - 1) * -1
+# could subtract 1 and multiply by -1
+
+
+table(ANT2$error[ANT2$subnum == 12])
+
+# could also do the following
+# ANT2$error[ANT2$subnum == 12 & ANT2$error == 1] <- 2
+# ANT2$error[ANT2$subnum == 12 & ANT2$error == 0] <- 1
+# ANT2$error[ANT2$subnum == 12 & ANT2$error == 2] <- 0
+# table(ANT2$error[ANT2$subnum == 12])
+
+# be careful about the following. why doesn't it work?
+# ANT2$error[ANT2$subnum == 12 & ANT2$error == 0] <- 1
+# ANT2$error[ANT2$subnum == 12 & ANT2$error == 1] <- 0
+# table(ANT2$error[ANT2$subnum == 12])
+
+##	Problem #3 
+## The terrible software that ran this version of the ANT task created an
+## "error" column rather than an "accuracy" column. Error codes 1 if the
+## participant made an error and 0 if they were accurate. Create a new column
+## called "accuracy" using the inverse of the error column. (Note: there are NAs
+## in these data that you need to preserve.)
+
+ANT2$accuracy <- ANT2$error
+ANT2$accuracy <- (ANT2$accuracy - 1) * -1
+
+##	Problem #4
+## For this task, a reviewer is concerned about the presence of outlier trials 
+## in your data, and they suggest that you (1) for each participant, 
+## identify/code trials with a reaction time 2.5 SD above or below that 
+## participant's mean reaction time; (2) exclude those trials from analysis. 
+## These trials should be identified from correct responses only, not incorrect
+## responses.
+
+
+ANT2 <- ANT2 %>% 
+  group_by(subnum, accuracy) %>%
+  mutate(cuthigh = mean(rt) + 2.5*sd(rt),
+         cutlow  = mean(rt) - 2.5*sd(rt))
+
+ANT2$accuracy[ANT2$accuracy == 1 & (ANT2$rt > ANT2$cuthigh | ANT2$rt < ANT2$cutlow)] <- 3
+
+## Problem #5
+## How many outliers were there as a percentage of the dataset? What should you tell the reviewer?
+
+
+# table(ANT2$accuracy)
+# 42 / (sum(table(ANT2$accuracy))) 
+# 0.007
+
+## Problem #6
+## Using only correct trials, create summary dataframes that contain the
+## relevant information to compute each of the following effects for each subject: alerting 
+## effect, orienting effect, conflict effect (using reaction time; see below for
+## a reminder of the trials involved). It's fine to have separate dplyr calls
+## for each effect! You don't actually have to compute the effect.
+correct <- ANT2[ANT2$accuracy == 1,]
+
+##	Alerting Effect = (RT to Double cue trials) - (RT to No cue trials)
+##	Orienting Effect = (RT to Spatial cue trials) - (RT to Center cue trials)
+cues <- correct %>%
+  group_by(subnum,cue) %>%
+  summarise(meanrt = mean(rt))
+
+##	Conflict Effect = (RT to Congruent trials) - (RT to Incongruent trials)
+conflict <- correct %>%
+  group_by(subnum,flank) %>%
+  summarise(meanrt = mean(rt))
+
+
+## Here's how you could compute the effects using the tidyr package!
+library(tidyr) #be a good idea to move this to the top
+
+cues <- cues %>%
+  spread(cue,meanrt)
+
+# we have spread he effects that were originally in one column out to many 
+# columns, this just makes it easier to mutate
+
+cues <- cues %>%
+  mutate(alerting_effect = Double - None,
+         orienting_effect = Spatial - Center)
+
+# Now the conflict effect
+conflict <- conflict %>%
+  spread(flank,meanrt) #again spread flank out into columns so we can mutate
+
+conflict <- conflict %>%
+  mutate(conflict_effect = Congruent - Incongruent)
+
+# Now we can merge the effects together into one frame. 
+effects <- merge(cues,conflict, by="subnum")
+
