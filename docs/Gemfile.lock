@@ -39,10 +39,11 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (= 3.2.1)
+  kramdown
   minima
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 3.0.2p107
 
 BUNDLED WITH
-   1.13.1
+   2.2.32
